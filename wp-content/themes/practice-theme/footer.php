@@ -4,8 +4,7 @@
 
 						<?php dynamic_sidebar('footer'); ?>
 						<?php dynamic_sidebar('footerTwo'); ?>
-						<?php dynamic_sidebar('footerthree'); ?>
-
+						<?php dynamic_sidebar('footerthree')?>
 				</div>
 				<div class="row bottom">
 					<div class="col-xs-12">
@@ -16,7 +15,6 @@
 		</footer>
 
 	</div>
-
 
 <?php wp_footer(); ?>
 </body>
