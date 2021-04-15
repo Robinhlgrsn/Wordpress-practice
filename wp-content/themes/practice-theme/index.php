@@ -7,11 +7,12 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="hero">
-								<img src="<?php the_post_thumbnail_url()?>" />
-								<div class="text">
-									<h1></h1>
-									<p></p>
-								</div>
+								
+									<?php while(have_posts()){
+										the_post();
+										the_content();
+									} ?>
+						
 							</div>
 						</div>
 					</div>
