@@ -2,8 +2,9 @@
   add_theme_support('post-thumbnails');
   add_theme_support('menus');
   add_theme_support('widgets');
+  add_theme_support( 'title-tag' );
   
-  
+
   add_action('after_setup_theme', 'registrera_meny');
 
   function registrera_meny()
@@ -11,7 +12,6 @@
     register_nav_menu('sidebarmeny', 'sidebarmeny');
   }
   
-
     register_sidebar(
       array(
         'name' => 'Footer Info 1',
@@ -52,7 +52,8 @@
       array(
         'name' => 'Main Side Bar',
         'description' => 'Social media',
-        'id' => 'mainsidebar'
+        'id' => 'mainsidebar',
+        'class' => 'sidebar'
       )
     );
   

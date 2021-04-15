@@ -7,12 +7,16 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<div class="hero">
-								
+
 									<?php while(have_posts()){
 										the_post();
-										the_content();
-									} ?>
-						
+										?>
+
+							<img src="<?php the_post_thumbnail() ?>" />
+								<div class="text">
+									<p><?php the_content(); ?></p>
+									</div>
+									<?php } ?>
 							</div>
 						</div>
 					</div>
@@ -20,4 +24,4 @@
 			</section>
 		</main>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
