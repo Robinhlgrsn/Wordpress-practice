@@ -24,7 +24,7 @@
 										<i class="fa fa-tag"></i> <a href="kategori.html">Kategori 1</a>, <a href="kategori.html">Kategori 2</a>
 									</li>
 								</ul>
-								<p><?php the_content(); ?></p>
+								<p><?php the_excerpt(); ?></p>
 							</article>
 
             <?php }; ?>
