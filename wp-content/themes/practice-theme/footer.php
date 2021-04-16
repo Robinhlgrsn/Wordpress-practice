@@ -1,15 +1,12 @@
 <footer id="footer">
 			<div class="container">
 				<div class="row top">
-
-						<?php dynamic_sidebar('footer'); ?>
+						<?php dynamic_sidebar('footer'); ?> 
 						<?php dynamic_sidebar('footerTwo'); ?>
 						<?php dynamic_sidebar('footerthree')?>
 				</div>
 				<div class="row bottom">
-					<div class="col-xs-12">
-						<p>Copyright &copy; Grupp X, 2016</p>
-					</div>
+						<?php dynamic_sidebar('copyright')?>
 				</div>
 			</div>
 		</footer>

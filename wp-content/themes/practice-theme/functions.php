@@ -4,14 +4,17 @@
   add_theme_support('widgets');
   add_theme_support( 'title-tag' );
   
-
+ /* ---------------- Lägg till meny ---------------- */
   add_action('after_setup_theme', 'registrera_meny');
 
   function registrera_meny()
   {
     register_nav_menu('sidebarmeny', 'sidebarmeny');
   }
-  
+   /* ---------------- ************ ---------------- */
+
+
+  /* ---------------- Skapa Widgets ---------------- */
     register_sidebar(
       array(
         'name' => 'Footer Info 1',
@@ -56,11 +59,21 @@
         'class' => 'sidebar'
       )
     );
+
+    register_sidebar(
+      array(
+        'name' => 'Copyright Footer',
+        'description' => 'Copyright text',
+        'id' => 'copyright',
+        'before_widget' => '<div class="col-xs-12">',
+        'after_widget' => '</div>'
+      )
+    );
+     /* ---------------- ****** ---------------- */
   
 
   
-
-  /* Ladda in Css och scripts */
+    /* ---------------- Scripts & Css ---------------- */
   add_action('wp_enqueue_scripts', 'themeScripts' );
   function themeScripts(){
     wp_enqueue_style('themestyle', get_template_directory_uri(). '/css/style.css');
@@ -73,5 +86,5 @@
     wp_enqueue_script('themescript', get_template_directory_uri(). '/js/script.js',[],false,true);
     wp_enqueue_script('jqueryscript', get_template_directory_uri(). '/js/jquery.js', ['jquery'],false,true);
   }
-  
+  /* ---------------- **************** ---------------- */
   ?>

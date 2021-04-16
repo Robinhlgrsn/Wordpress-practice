@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title><?php wp_title();?></title>
-		<?php wp_head();?>
+		<title><?php wp_title();?></title> 
+		<?php wp_head();?> <!-- skriver ut scripts och  annan information innaför headtagen. -->
 </head>
 <body>
 	
@@ -17,7 +17,7 @@
 					</div>
 					<div class="col-sm-6 hidden-xs">
 						<form id="searchform" class="searchform">
-							<?php get_search_form(); ?>
+							<?php get_search_form(); ?> <!-- Hämtar sökfält -->
 						</form>
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
@@ -40,7 +40,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<?php wp_nav_menu() ?>
+						<?php wp_nav_menu() ?> <!-- hämtar huvudmenyn -->
 					</div>
 				</div>
 			</div>

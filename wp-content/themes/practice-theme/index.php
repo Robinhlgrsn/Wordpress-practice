@@ -8,11 +8,11 @@
 						<div class="col-xs-12">
 							<div class="hero">
 
-									<?php while(have_posts()){
-										the_post();
-										?>
+								<?php while(have_posts()){
+									the_post();
+								?>
 
-							<img src="<?php the_post_thumbnail() ?>" />
+								<?php the_post_thumbnail();?>
 								<div class="text">
 									<p><?php the_content(); ?></p>
 									</div>
