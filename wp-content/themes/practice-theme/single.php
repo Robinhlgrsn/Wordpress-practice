@@ -30,6 +30,14 @@
 							</nav>
 						</div>
 
+						<aside id="secondary" class="col-xs-12 col-md-3">
+							<div id="sidebar">
+								<ul>
+							<?php dynamic_sidebar('mainsidebar') ?> <!-- hämtar widget sidebar -->
+								</ul>
+							</div>
+						</aside>
+
 
 					</div>
 				</div>
