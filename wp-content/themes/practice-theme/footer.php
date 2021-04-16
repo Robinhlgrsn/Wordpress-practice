@@ -13,6 +13,6 @@
 
 	</div>
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> <!-- Laddar in scripts och annan information innan stängade body tagen. hämtar adminpanelen tillsammans med wp_head -->
 </body>
 </html>
